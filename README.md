@@ -7,15 +7,16 @@ Supposons pour le moment que le document est disponible en tant que valeur de ch
 
 Attention à ne pas tenir compte de :
 * La ponctuation
-* de la casse
-
+* de la casse (*The* vaut pour *the*)
+ 
 Par simplicité (mais c'est mal) on va considérer que les pronoms (y, à, où...) sont des mots. 
 
-# Exemple
+# Exemples
 
-La chaine `foo bar foo` retourne :
-* (2, foo)
-* (1, bar)
+La chaine `foo bar foo foobar bar foo` retourne :
+* (3, foo)
+* (2, bar)
+* (1, foobar)
 
 # Pour finir
 
