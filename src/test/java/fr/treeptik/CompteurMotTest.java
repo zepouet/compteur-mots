@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
 public class CompteurMotTest {
 
     private CompteurMot compteurMot;
-    private Map<String, Integer> comptés;
-    private Map<String, Integer> attendus;
+    private Map<Integer, String> comptés;
+    private Map<Integer, String> attendus;
 
     @Before
     public void setup() {
@@ -25,9 +25,9 @@ public class CompteurMotTest {
 
     @Test
     public void countOneWord() {
-        attendus.put("word", 1);
+        attendus.put(1, "foo");
 
-        comptés = compteurMot.phrase("word");
+        comptés = compteurMot.phrase("foo");
         assertEquals(
                 attendus, comptés
         );

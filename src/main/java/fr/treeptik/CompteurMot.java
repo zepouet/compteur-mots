@@ -3,7 +3,7 @@ package fr.treeptik;
 import java.util.Map;
 
 public class CompteurMot {
-    public Map<String,Integer> phrase(String word) {
+    public Map<Integer,String> phrase(String word) {
         return null;
     }
 }
