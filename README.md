@@ -1,14 +1,27 @@
-Faire un programme qui prend en entrée:
-* soit un fichier
-* soit une chaîne de caractères
-Et qui retourner le nombre de mots triés par ordre décroissant
+# Problème 
 
-Attention, on ne doit pas tenir compte de la ponctuation ni des virgules, saut de lignes...
+Envisagons un programme qui doit trouver les 10 mots les plus utilisés dans un document. 
+Supposons pour le moment que le document est disponible en tant que valeur de chaîne. 
+
+# Contrainte
+
+Attention à ne pas tenir compte de :
+* La ponctuation
+* de la casse
+
+Par simplicité (mais c'est mal) on va considérer que les pronoms (y, à, où...) sont des mots. 
 
 # Exemple
 
-La chaine **coucou foo bar foo** retourne :
+La chaine `foo bar foo` retourne :
 * (2, foo)
 * (1, bar)
-* (1, coucou)
 
+# Pour finir
+
+Prendre le texte de la http://www.ietf.org/rfc/rfc0822.txt
+Le résultat devrait être:
+
+```
+["the","of","to","a","is","and","be",";","for","in"]
+``` 
