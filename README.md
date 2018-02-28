@@ -1,7 +1,8 @@
 # Problème 
 
-Envisagons un programme qui doit trouver les 10 mots les plus utilisés dans un document. 
+Envisagons un programme qui doit trouver les mots les plus utilisés dans un document. 
 Supposons pour le moment que le document est disponible en tant que valeur de chaîne. 
+Le but est de retourner trié par ordre décroissant les mots du document.
 
 # Contrainte
 
@@ -24,5 +25,5 @@ Prendre le texte de la http://www.ietf.org/rfc/rfc0822.txt
 Le résultat devrait être:
 
 ```
-["the","of","to","a","is","and","be",";","for","in"]
+[(648,"the"),(336,"of"),(281,"to"),(273,"a"),(230,"is"),(191,"and"),(178,"be"),(172,";"),(166,"for"),(156,"in")]
 ``` 
